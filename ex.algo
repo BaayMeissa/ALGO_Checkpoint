@@ -1,0 +1,18 @@
+ALGORITHM algorithm_name
+VAR
+    n_mots, n_voyelles: INTEGER
+BEGIN
+    n_mots := 0
+    n_voyelles := 0
+    Read(phrase)
+    FOR i FROM 1 TO length(phrase) STEP 1 step  DO
+        IF (phrase[i] = " " ) THEN
+            n_mots := n_mots + 1
+        END_IF
+
+        IF (phrase[I] = "A" OR phrase[I] = "E" OR phrase[I] = "I" OR phrase[I] = "O" OR phrase[I] = "U" OR phrase[I] = "Y"
+        OR phrase[I] = "a" OR phrase[I] = "e" OR phrase[I] = "i" OR phrase[I] = "o" OR phrase[I] = "u" OR phrase[I] = "y") THEN
+            n_voyelles := n_voyelles + 1
+        END_IF
+    END_FOR
+END

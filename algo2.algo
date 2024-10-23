@@ -1,0 +1,13 @@
+ALGORITHM insertion_sort
+VAR
+    i,j : INTEGER
+BEGIN
+    FOR i FROM 1 TO length(tableau) STEP 1  DO
+        actuel = array[i]
+        j = i - 1
+        Tant que (j >= 0 et array[j] > actuel)
+            array[j + 1] = array[j]
+            j = j - 1
+        array[j + 1] = actuel
+    END_FOR
+END
